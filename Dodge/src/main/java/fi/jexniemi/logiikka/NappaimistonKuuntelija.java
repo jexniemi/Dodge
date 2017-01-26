@@ -16,10 +16,10 @@ import java.awt.event.KeyListener;
 
 public class NappaimistonKuuntelija implements KeyListener {
 
-    private Hahmo hahmo;
+    private Pelaaja hahmo;
     private Component component;
 
-    public NappaimistonKuuntelija(Hahmo hahmo, Component component) {
+    public NappaimistonKuuntelija(Pelaaja hahmo, Component component) {
         this.hahmo = hahmo;
         this.component = component;
     }

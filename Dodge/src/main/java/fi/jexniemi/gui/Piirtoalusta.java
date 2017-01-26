@@ -5,7 +5,7 @@
  */
 package fi.jexniemi.gui;
 
-import fi.jexniemi.logiikka.Hahmo;
+import fi.jexniemi.logiikka.Pelaaja;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
@@ -16,9 +16,9 @@ import javax.swing.JPanel;
  */
 public class Piirtoalusta extends JPanel {
 
-    private Hahmo hahmo;
+    private Pelaaja hahmo;
     
-    public Piirtoalusta(Hahmo hahmo) {
+    public Piirtoalusta(Pelaaja hahmo) {
         super.setBackground(Color.WHITE);
         this.hahmo = hahmo;
     }

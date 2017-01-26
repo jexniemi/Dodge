@@ -18,10 +18,10 @@ import javax.swing.WindowConstants;
 public class Kayttoliittyma implements Runnable {
 
     private JFrame frame;
-    private Hahmo pelaaja;
+    private Pelaaja pelaaja;
 
     public Kayttoliittyma() {
-        this.pelaaja = new Hahmo(250, 400);
+        this.pelaaja = new Pelaaja(250, 400);
     }
 
     @Override

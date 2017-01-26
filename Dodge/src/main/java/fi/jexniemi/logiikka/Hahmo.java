@@ -5,15 +5,13 @@
  */
 package fi.jexniemi.logiikka;
 
-import java.awt.Graphics;
-
 /**
  *
  * @author jexniemi
  */
-public class Hahmo {
-    private int x;
-    private int y;
+public abstract class Hahmo {
+    protected int x;
+    protected int y;
 
     public Hahmo(int x, int y) {
         this.x = x;
@@ -31,9 +29,5 @@ public class Hahmo {
     public void siirry(int xmuutos, int ymuutos) {
         this.x += xmuutos;
         this.y += ymuutos;
-    }
-
-    public void piirra(Graphics graphics) {
-        graphics.fillOval(x, y, 15, 15);
     }
 }
