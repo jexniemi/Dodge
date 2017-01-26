@@ -9,6 +9,7 @@ package fi.jexniemi.gui;
  *
  * @author jexniemi
  */
+import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import fi.jexniemi.logiikka.*;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -21,7 +22,7 @@ public class Kayttoliittyma implements Runnable {
     private Pelaaja pelaaja;
 
     public Kayttoliittyma() {
-        this.pelaaja = new Pelaaja(250, 400);
+        this.pelaaja = new Pelaaja(250, 400, 500, 500);
     }
 
     @Override

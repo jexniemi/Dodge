@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.jexniemi.logiikka;
+package fi.jexniemi.logiikka.hahmot;
 
+import fi.jexniemi.logiikka.hahmot.Hahmo;
 import java.awt.Graphics;
 
 /**
@@ -13,8 +14,8 @@ import java.awt.Graphics;
  */
 public class Pelaaja extends Hahmo {
     
-    public Pelaaja(int x, int y) {
-        super(x, y);
+    public Pelaaja(int x, int y, int pelinLeveys, int pelinKorkeus) {
+        super(x, y, pelinLeveys, pelinKorkeus);
     }
     
     public void piirra(Graphics graphics) {

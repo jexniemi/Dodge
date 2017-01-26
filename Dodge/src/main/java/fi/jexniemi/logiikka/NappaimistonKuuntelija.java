@@ -9,6 +9,7 @@ package fi.jexniemi.logiikka;
  *
  * @author jexniemi
  */
+import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import fi.jexniemi.gui.*;
 import java.awt.Component;
 import java.awt.event.KeyEvent;

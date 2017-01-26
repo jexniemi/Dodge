@@ -5,7 +5,7 @@
  */
 package fi.jexniemi.gui;
 
-import fi.jexniemi.logiikka.Pelaaja;
+import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
