@@ -4,5 +4,6 @@
 
 * Pelin pelaaminen
 
+**Luokkakaavio:**
 
 ![Alt text](luokkakaavio.png "Luokkakaavio")
