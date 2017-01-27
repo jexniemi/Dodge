@@ -3,3 +3,6 @@
 **Kaikkien käyttäjien toiminnot:**
 
 * Pelin pelaaminen
+
+
+![Alt text](luokkakaavio.png "Luokkakaavio")
