@@ -26,7 +26,7 @@ public class Kayttoliittyma implements Runnable {
     }
 
     @Override
-    public void run() {
+    public final void run() {
         frame = new JFrame("Dodge");
         frame.setPreferredSize(new Dimension(500, 500));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

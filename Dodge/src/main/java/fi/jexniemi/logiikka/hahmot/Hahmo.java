@@ -12,8 +12,8 @@ package fi.jexniemi.logiikka.hahmot;
 public abstract class Hahmo {
     protected int x;
     protected int y;
-    protected int pelinLeveys;
-    protected int pelinKorkeus;
+    protected final int pelinLeveys;
+    protected final int pelinKorkeus;
 
     public Hahmo(int x, int y, int pelinLeveys, int pelinKorkeus) {
         this.x = x;
@@ -22,15 +22,15 @@ public abstract class Hahmo {
         this.pelinKorkeus = pelinKorkeus;
     }
 
-    public int getX() {
+    public final int getX() {
         return x;
     }
 
-    public int getY() {
+    public final int getY() {
         return y;
     }
     
-    public int getPelinLeveys() {
+    public final int getPelinLeveys() {
         return this.pelinLeveys;
     }
     
