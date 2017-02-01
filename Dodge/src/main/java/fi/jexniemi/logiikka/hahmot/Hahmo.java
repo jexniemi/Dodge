@@ -22,11 +22,11 @@ public abstract class Hahmo {
         this.pelinKorkeus = pelinKorkeus;
     }
 
-    public final int getX() {
+    public int getX() {
         return x;
     }
 
-    public final int getY() {
+    public int getY() {
         return y;
     }
     

@@ -1,10 +1,8 @@
 # Dodge
 Javalab 2017 course project
 
-## Aiheen kuvaus ja rakenne 
+## Dokumentaatio
 
-[aiheen kuvaus](dokumentaatio/aiheenKuvausJaRakenne.md)
+[Aiheen kuvaus](dokumentaatio/aiheenKuvausJaRakenne.md)
 
-## Tuntikirjanpito 
-
-[tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
+[Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)

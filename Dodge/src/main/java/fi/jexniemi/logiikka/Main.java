@@ -19,7 +19,7 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        Kayttoliittyma kayttoliittyma = new Kayttoliittyma();
+        Kayttoliittyma kayttoliittyma = new Kayttoliittyma(500, 500);
         SwingUtilities.invokeLater(kayttoliittyma);
     }
 }

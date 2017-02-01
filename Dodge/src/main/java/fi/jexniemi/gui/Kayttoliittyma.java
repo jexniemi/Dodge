@@ -20,15 +20,19 @@ public class Kayttoliittyma implements Runnable {
 
     private JFrame frame;
     private Pelaaja pelaaja;
+    private int leveys;
+    private int korkeus;
 
-    public Kayttoliittyma() {
-        this.pelaaja = new Pelaaja(250, 400, 500, 500);
+    public Kayttoliittyma(int leveys, int korkeus) {
+        this.leveys = leveys;
+        this.korkeus = korkeus;
+        this.pelaaja = new Pelaaja(250, 400, leveys, korkeus);
     }
 
     @Override
     public final void run() {
         frame = new JFrame("Dodge");
-        frame.setPreferredSize(new Dimension(500, 500));
+        frame.setPreferredSize(new Dimension(this.leveys, this.korkeus));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         luoKomponentit(frame.getContentPane());
