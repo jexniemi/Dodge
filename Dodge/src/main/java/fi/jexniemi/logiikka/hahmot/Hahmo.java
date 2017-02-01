@@ -10,32 +10,45 @@ package fi.jexniemi.logiikka.hahmot;
  * @author jexniemi
  */
 public abstract class Hahmo {
-    protected int x;
-    protected int y;
+
+    protected double x;
+    protected double y;
     protected final int pelinLeveys;
     protected final int pelinKorkeus;
+    protected double vauhti;
+    boolean liikkuuOikealle;
 
-    public Hahmo(int x, int y, int pelinLeveys, int pelinKorkeus) {
+    public Hahmo(double x, double y, int pelinLeveys, int pelinKorkeus) {
         this.x = x;
         this.y = y;
         this.pelinLeveys = pelinLeveys;
         this.pelinKorkeus = pelinKorkeus;
+        this.vauhti = 0;
+        this.liikkuuOikealle = true;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
-    
+
     public final int getPelinLeveys() {
         return this.pelinLeveys;
     }
-    
+
     public int getPelinKorkeus() {
         return this.pelinKorkeus;
+    }
+
+    public double getVauhti() {
+        return this.vauhti;
+    }
+    
+    public void setVauhti(double paljon) {
+        this.vauhti = paljon;
     }
 
     public void siirry(int xmuutos, int ymuutos) {
@@ -44,9 +57,16 @@ public abstract class Hahmo {
         } else if (this.x + xmuutos > pelinLeveys - 25) {
             this.x = pelinLeveys - 25;
         } else {
-            this.x += xmuutos;
+            if (xmuutos > 0) {
+                this.x += xmuutos + vauhti;
+            } else if (xmuutos < 0) {
+                this.x += xmuutos - vauhti;
+            }
         }
+        
+        vauhti += 1;
         
         this.y += ymuutos;
     }
+
 }

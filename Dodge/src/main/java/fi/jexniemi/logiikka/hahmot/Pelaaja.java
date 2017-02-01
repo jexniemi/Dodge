@@ -13,12 +13,16 @@ import java.awt.Graphics;
  * @author jexniemi
  */
 public class Pelaaja extends Hahmo {
-    
-    public Pelaaja(int x, int y, int pelinLeveys, int pelinKorkeus) {
+
+    public Pelaaja(double x, double y, int pelinLeveys, int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
     
+
+    
     public void piirra(Graphics graphics) {
-        graphics.fillOval(x, y, 15, 15);
+        int xInt = (int) x;
+        int yInt = (int) y;
+        graphics.fillOval(xInt, yInt, 15, 15);
     }
 }

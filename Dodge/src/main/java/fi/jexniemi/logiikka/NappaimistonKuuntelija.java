@@ -14,6 +14,7 @@ import fi.jexniemi.gui.*;
 import java.awt.Component;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.HashSet;
 
 public class NappaimistonKuuntelija implements KeyListener {
 
@@ -28,16 +29,20 @@ public class NappaimistonKuuntelija implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            hahmo.siirry(-8, 0);
+            hahmo.siirry(-2, 0);
         } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            hahmo.siirry(8, 0);
+            hahmo.siirry(2, 0);
         }
-        
         component.repaint();
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            hahmo.setVauhti(0);
+        } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            hahmo.setVauhti(0);
+        }        
     }
 
     @Override
