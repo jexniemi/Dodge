@@ -18,20 +18,20 @@ import java.util.HashSet;
 
 public class NappaimistonKuuntelija implements KeyListener {
 
-    private Pelaaja hahmo;
+    private Pelaaja pelaaja;
     private Component component;
 
     public NappaimistonKuuntelija(Pelaaja hahmo, Component component) {
-        this.hahmo = hahmo;
+        this.pelaaja = hahmo;
         this.component = component;
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            hahmo.siirry(-2, 0);
+            pelaaja.siirry(-2, 0);
         } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            hahmo.siirry(2, 0);
+            pelaaja.siirry(2, 0);
         }
         component.repaint();
     }
@@ -39,9 +39,9 @@ public class NappaimistonKuuntelija implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            hahmo.setVauhti(0);
+            pelaaja.setVauhti(0);
         } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            hahmo.setVauhti(0);
+            pelaaja.setVauhti(0);
         }        
     }
 
