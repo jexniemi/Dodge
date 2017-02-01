@@ -39,10 +39,12 @@ public abstract class Hahmo {
     }
 
     public void siirry(int xmuutos, int ymuutos) {
-        if (this.x + xmuutos >= 0 && this.x + xmuutos <= pelinLeveys) {
-            this.x += xmuutos;
-        } else {
+        if (this.x + xmuutos < 0) {
             this.x = 0;
+        } else if (this.x + xmuutos > pelinLeveys - 25) {
+            this.x = pelinLeveys - 25;
+        } else {
+            this.x += xmuutos;
         }
         
         this.y += ymuutos;
