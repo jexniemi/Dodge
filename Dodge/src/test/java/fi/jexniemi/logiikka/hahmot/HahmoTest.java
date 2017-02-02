@@ -42,18 +42,18 @@ public class HahmoTest {
 
     @Test
     public void getXtoimii() {
-        assertEquals(30, pelaaja.getX());
+        assertEquals(30, pelaaja.getX(), 0);
     }
 
     @Test
     public void getYtoimii() {
-        assertEquals(25, pelaaja.getY());
+        assertEquals(25, pelaaja.getY(), 0);
     }
 
     @Test
     public void konstruktoriAsettaaParametritOikein() {
-        assertEquals(30, pelaaja.getX());
-        assertEquals(25, pelaaja.getY());
+        assertEquals(30, pelaaja.getX(), 0);
+        assertEquals(25, pelaaja.getY(), 0);
         assertEquals(500, pelaaja.getPelinLeveys());
         assertEquals(500, pelaaja.getPelinKorkeus());
     }
@@ -61,35 +61,35 @@ public class HahmoTest {
     @Test
     public void siirryMetodiToimii() {
         pelaaja.siirry(5, 2);
-        assertEquals(35, pelaaja.getX());
-        assertEquals(27, pelaaja.getY());
+        assertEquals(35, pelaaja.getX(), 0);
+        assertEquals(27, pelaaja.getY(), 0);
     }
 
     @Test
     public void siirryMetodiToimiiNegatiivisillaArvoilla() {
         pelaaja.siirry(-2, -5);
-        assertEquals(28, pelaaja.getX());
-        assertEquals(20, pelaaja.getY());
+        assertEquals(28, pelaaja.getX(), 0);
+        assertEquals(20, pelaaja.getY(), 0);
     }
 
     @Test
     public void siirryMetodiMuuttaaXMuttaEiY() {
         pelaaja.siirry(5, 0);
-        assertEquals(35, pelaaja.getX());
-        assertEquals(25, pelaaja.getY());
+        assertEquals(35, pelaaja.getX(), 0);
+        assertEquals(25, pelaaja.getY(), 0);
     }
 
     @Test
     public void siirryMetodiMuuttaaYMuttaEiX() {
         pelaaja.siirry(0, -2);
-        assertEquals(30, pelaaja.getX());
-        assertEquals(23, pelaaja.getY());
+        assertEquals(30, pelaaja.getX(), 0);
+        assertEquals(23, pelaaja.getY(), 0);
     }
 
     @Test
     public void siirryMetodiXEiAlleNolla() {
         pelaaja.siirry(-31, 0);
-        assertEquals(0, pelaaja.getX());
+        assertEquals(0, pelaaja.getX(), 0);
     }
 
     @Test
@@ -105,7 +105,7 @@ public class HahmoTest {
     @Test
     public void yVoiOllaAlleNolla() {
         pelaaja.siirry(0, -26);
-        assertEquals(-1, pelaaja.getY());
+        assertEquals(-1, pelaaja.getY(), 0);
     }
 
     @Test
