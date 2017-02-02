@@ -35,7 +35,7 @@ public abstract class Hahmo {
         return y;
     }
 
-    public final int getPelinLeveys() {
+    public int getPelinLeveys() {
         return this.pelinLeveys;
     }
 

@@ -18,8 +18,6 @@ public class Pelaaja extends Hahmo {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
     
-
-    
     public void piirra(Graphics graphics) {
         int xInt = (int) x;
         int yInt = (int) y;
