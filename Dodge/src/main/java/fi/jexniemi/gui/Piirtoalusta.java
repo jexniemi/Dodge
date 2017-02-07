@@ -11,7 +11,8 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 /**
- *
+ * Piirtoalusta
+ * 
  * @author jexniemi
  */
 public class Piirtoalusta extends JPanel {

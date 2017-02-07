@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.jexniemi.logiikka;
+package fi.jexniemi.logiikka.hahmot;
 
-import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,12 +16,10 @@ import static org.junit.Assert.*;
  *
  * @author jexniemi
  */
-public class NappaimistonKuuntelijaTest {
+public class VihollinenTest {
+    Vihollinen vihollinen;
     
-    NappaimistonKuuntelija nappaimistonKuuntelija;
-    Pelaaja pelaaja;
-    
-    public NappaimistonKuuntelijaTest() {
+    public VihollinenTest() {
     }
     
     @BeforeClass
@@ -35,6 +32,7 @@ public class NappaimistonKuuntelijaTest {
     
     @Before
     public void setUp() {
+        vihollinen = new Vihollinen(30, 35, 500, 500);
     }
     
     @After

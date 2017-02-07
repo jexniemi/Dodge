@@ -5,15 +5,15 @@
  */
 package fi.jexniemi.logiikka.hahmot;
 
-import fi.jexniemi.logiikka.hahmot.Hahmo;
-
 /**
+ * Viholliset ovat pelikentällä ylhäältä alas putoavia olioita, joita
+ * pelaajan tulee väistellä
  *
  * @author jexniemi
  */
 public class Vihollinen extends Hahmo {
-    
-    public Vihollinen(int x, int y, int pelinLeveys, int pelinKorkeus) {
+
+    public Vihollinen(final int x, final int y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
 }

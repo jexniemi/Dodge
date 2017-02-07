@@ -39,6 +39,14 @@ Pelaaja pelaaja;
     public void tearDown() {
     }
 
+    @Test
+    public void konstruktoriAsettaaParametritOikein() {
+        assertEquals(30, pelaaja.getX(), 0);
+        assertEquals(35, pelaaja.getY(), 0);
+        assertEquals(500, pelaaja.getPelinLeveys());
+        assertEquals(500, pelaaja.getPelinKorkeus());
+    }
+    
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

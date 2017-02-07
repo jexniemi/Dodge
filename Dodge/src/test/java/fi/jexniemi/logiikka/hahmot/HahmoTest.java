@@ -46,6 +46,28 @@ public class HahmoTest {
     }
 
     @Test
+    public void getPelinLeveystoimii() {
+        assertEquals(500, pelaaja.getPelinLeveys(), 0);
+    }
+
+    @Test
+    public void getPelinKorkeustoimii() {
+        assertEquals(500, pelaaja.getPelinKorkeus(), 0);
+    }
+
+    @Test
+    public void setVauhtiToimii() {
+        pelaaja.setVauhti(5);
+        assertEquals(5, pelaaja.getVauhti(), 0);
+    }
+    
+    @Test
+    public void setYtoimii() {
+        pelaaja.setY(50);
+        assertEquals(50, pelaaja.getY(), 0);
+    }
+
+    @Test
     public void getYtoimii() {
         assertEquals(25, pelaaja.getY(), 0);
     }
@@ -114,9 +136,24 @@ public class HahmoTest {
         pelaaja.siirry(0, pelaaja.getPelinKorkeus());
         if (pelaaja.getY() < pelaaja.getPelinKorkeus()) {
             totta = false;
-        }        
-        
+        }
+
         assertTrue(totta);
+    }
+
+    @Test
+    public void moveXtoimii() {
+        pelaaja.moveX(5);
+        assertEquals(35, pelaaja.getX(), 0);
+
+        pelaaja.moveX(-5);
+        assertEquals(30, pelaaja.getX(), 0);
+    }
+
+    @Test
+    public void lisaaVauhtiaToimii() {
+        pelaaja.lisaaVauhtia(5);
+        assertEquals(5, pelaaja.getVauhti(), 0);
     }
 
     // TODO add test methods here.

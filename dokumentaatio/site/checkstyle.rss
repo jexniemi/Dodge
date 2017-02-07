@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2017</copyright>
     <item>
       <title>File: 7,
-             Errors: 112,
+             Errors: 67,
              Warnings: 0,
              Infos: 0
       </title>
@@ -55,12 +55,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  16
+                  7
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fi.jexniemi.logiikka.Main.java">fi/jexniemi/logiikka/Main.java</a>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.Main.java">fi/jexniemi/gui/Main.java</a>
                 </td>
                 <td>
                   0
@@ -69,7 +69,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  4
                 </td>
               </tr>
                           <tr>
@@ -83,7 +83,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  14
+                  7
                 </td>
               </tr>
                           <tr>
@@ -97,7 +97,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  43
+                  20
                 </td>
               </tr>
                           <tr>
@@ -125,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  2
                 </td>
               </tr>
                           <tr>

@@ -6,11 +6,11 @@
 package fi.jexniemi.gui;
 
 /**
+ * Kaikki graafiset elementit luodaan tässä luokassa
  *
  * @author jexniemi
  */
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
-import fi.jexniemi.logiikka.*;
 import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.JFrame;

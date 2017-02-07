@@ -4,23 +4,28 @@
  * and open the template in the editor.
  */
 package fi.jexniemi.logiikka.hahmot;
-
-import fi.jexniemi.logiikka.hahmot.Hahmo;
 import java.awt.Graphics;
 
 /**
+ * Tästä luokasta luodaan pelikentällä liikkuva hahmo, joka on
+ * pelaajan ohjattavissa
  *
  * @author jexniemi
  */
 public class Pelaaja extends Hahmo {
 
-    public Pelaaja(double x, double y, int pelinLeveys, int pelinKorkeus) {
+    public Pelaaja(final double x, final double y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
     
-    public void piirra(Graphics graphics) {
-        int xInt = (int) x;
-        int yInt = (int) y;
-        graphics.fillOval(xInt, yInt, 15, 15);
+    /**
+     * Piirtää pelihahmon haluttuun sijaintiin kentällä
+     *
+     * @param graphics
+     */
+    public final void piirra(final Graphics graphics) {
+        int width = 15;
+        int height = 15;
+        graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 }

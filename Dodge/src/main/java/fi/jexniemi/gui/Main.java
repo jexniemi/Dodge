@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.jexniemi.logiikka;
+package fi.jexniemi.gui;
 
 import fi.jexniemi.gui.Kayttoliittyma;
 import javax.swing.SwingUtilities;
@@ -17,9 +17,11 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-
     public static void main(String[] args) {
-        Kayttoliittyma kayttoliittyma = new Kayttoliittyma(500, 500);
+        int leveys = 500;
+        int korkeus = 500;
+
+        Kayttoliittyma kayttoliittyma = new Kayttoliittyma(leveys, korkeus);
         SwingUtilities.invokeLater(kayttoliittyma);
     }
 }
