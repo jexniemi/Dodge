@@ -8,3 +8,14 @@
 **Luokkakaavio:**
 
 ![Alt text](luokkakaavio.png "Luokkakaavio")
+
+**Sekvenssikaavio 1 (Pelaajan liikkuminen vasemmalle):**
+
+![Alt text] (DodgeSekvenssikaavio1.jpg "Sekvenssikaavio 1")
+
+**Sekvenssikaavio 2 (Pelaajan liikkuminen oikealle):**
+
+![Alt text] (DodgeSekvenssikaavio2.jpg "Sekvenssikaavio 2")
+
+
+
