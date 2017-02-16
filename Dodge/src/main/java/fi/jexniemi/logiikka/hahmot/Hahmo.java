@@ -12,13 +12,19 @@ package fi.jexniemi.logiikka.hahmot;
  */
 public abstract class Hahmo {
 
-    private double x;
+    double x;
     private double y;
     private final int pelinLeveys;
     private final int pelinKorkeus;
     private double vauhti;
 
-
+    /**
+     *
+     * @param setX asettaa x arvon
+     * @param setY asettaa y arvon
+     * @param setGameWidth antaa Hahmolle tiedon pelikentän leveydestä
+     * @param setGameHeight antaa Hahmolle tiedon pelikentän korkeudesta
+     */
     public Hahmo(final double setX, final double setY, final int setGameWidth, final int setGameHeight) {
         this.x = setX;
         this.y = setY;
@@ -27,24 +33,40 @@ public abstract class Hahmo {
         this.vauhti = 0;
     }
 
+    /**
+     *
+     * @return
+     */
     public final double getX() {
         return x;
     }
 
+    /**
+     *
+     * @return
+     */
     public final double getY() {
         return y;
     }
 
+    /**
+     *
+     * @param setX
+     */
     public final void setX(final double setX) {
         this.x = setX;
     }
 
+    /**
+     *
+     * @param setY
+     */
     public final void setY(final double setY) {
         this.y = setY;
     }
 
     /*
-    * Metodi muuttaa muuttuujaa x arvoa halutun verran
+    * Metodi muuttaa muuttuujaa x arvoa halutun verran.
     *
     * @param amount Muuttujaan x lisättävä arvo
     *
@@ -53,33 +75,50 @@ public abstract class Hahmo {
         this.x += amount;
     }
 
+    /**
+     *
+     * @return
+     */
     public final int getPelinLeveys() {
         return this.pelinLeveys;
     }
 
+    /**
+     *
+     * @return
+     */
     public final int getPelinKorkeus() {
         return this.pelinKorkeus;
     }
 
+    /**
+     *
+     * @return
+     */
     public final double getVauhti() {
         return this.vauhti;
     }
 
+    /**
+     *
+     * @param amount
+     */
     public final void setVauhti(final double amount) {
         this.vauhti = amount;
     }
     
     /**
+     * Lisää pelihahmon vauhtia.
      *
-     * @param amount
+     * @param amount Kertoo kuinka paljon vauhdin arvoa kasvatetaan
      */
     public final void lisaaVauhtia(final double amount) {
         this.vauhti += amount;
     }
 
     /**
-     * Metodi muuttaa Hahmo -luokan ilmentymän x ja y arvoja
-     * sekä kasvattaa vauhtia. 
+     * Metodi muuttaa Hahmo -luokan ilmentymän x ja y arvoja.
+     * 
      * 
      * 
      * @param xmuutos Muuttujaan x lisättävä arvo

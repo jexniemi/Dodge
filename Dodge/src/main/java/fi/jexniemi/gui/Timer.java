@@ -5,18 +5,37 @@
  */
 package fi.jexniemi.gui;
 
-import java.awt.event.ActionEvent;
+import fi.jexniemi.logiikka.hahmot.Vihollinen;
+import java.awt.Component;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 /**
  *
  * @author jexniemi
  */
-public class Timer implements ActionListener {
+public class Timer extends JFrame {
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    javax.swing.Timer t;
+    ActionListener listener;
+    private ArrayList<Vihollinen> viholliset;
+    private Component component;
+    
+    /**
+     *
+     * @param component
+     * @param viholliset
+     */
+    public Timer(final Component component, final ArrayList<Vihollinen> viholliset) {
+        this.viholliset = viholliset;
+        
+        this.listener = new TimeListener(this.viholliset, this.component);
+        t = new javax.swing.Timer(1000, this.listener);
+        t.start();
     }
     
 }

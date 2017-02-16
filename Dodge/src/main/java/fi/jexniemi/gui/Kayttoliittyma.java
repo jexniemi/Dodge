@@ -11,22 +11,36 @@ package fi.jexniemi.gui;
  * @author jexniemi
  */
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
+import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
+/**
+ *
+ * @author jexniemi
+ */
 public class Kayttoliittyma implements Runnable {
 
     private JFrame frame;
     private Pelaaja pelaaja;
     private int leveys;
     private int korkeus;
+    private Timer timer;
+    private ArrayList<Vihollinen> viholliset;
 
+    /**
+     *
+     * @param leveys
+     * @param korkeus
+     */
     public Kayttoliittyma(int leveys, int korkeus) {
         this.leveys = leveys;
         this.korkeus = korkeus;
         this.pelaaja = new Pelaaja(250, 400, leveys, korkeus);
+        this.viholliset = new ArrayList();
     }
 
     @Override
@@ -42,11 +56,16 @@ public class Kayttoliittyma implements Runnable {
     }
 
     private void luoKomponentit(Container container) {
-        Piirtoalusta piirtoalusta = new Piirtoalusta(this.pelaaja);
+        Piirtoalusta piirtoalusta = new Piirtoalusta(this.pelaaja, this.viholliset);
         container.add(piirtoalusta);
         frame.addKeyListener(new NappaimistonKuuntelija(this.pelaaja, piirtoalusta));
+        this.timer = new Timer(piirtoalusta, this.viholliset);
     }
 
+    /**
+     *
+     * @return
+     */
     public JFrame getFrame() {
         return frame;
     }

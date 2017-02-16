@@ -5,6 +5,10 @@
  */
 package fi.jexniemi.logiikka.hahmot;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.Random;
+
 /**
  * Viholliset ovat pelikentällä ylhäältä alas putoavia olioita, joita
  * pelaajan tulee väistellä
@@ -13,7 +17,29 @@ package fi.jexniemi.logiikka.hahmot;
  */
 public class Vihollinen extends Hahmo {
 
+    /**
+     * Konstruktori luo vihollis -olion ja sijoittaa sen pelikentä ylälaidalle.
+     * X:n arvo on sattumanvarainen.
+     *
+     * @param x
+     * @param y
+     * @param pelinLeveys
+     * @param pelinKorkeus
+     */
     public Vihollinen(final int x, final int y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
+        Random r = new Random();
+        this.x = r.nextInt(500);
+    }
+    
+    /**
+     *
+     * @param graphics
+     */
+    public final void piirra(final Graphics graphics) {
+        int width = 15;
+        int height = 15;
+        graphics.setColor(Color.RED);
+        graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 }

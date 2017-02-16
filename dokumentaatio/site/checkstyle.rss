@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2017</copyright>
     <item>
-      <title>File: 7,
-             Errors: 67,
+      <title>File: 9,
+             Errors: 136,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fi.jexniemi.logiikka.NappaimistonKuuntelija.java">fi/jexniemi/logiikka/NappaimistonKuuntelija.java</a>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.NappaimistonKuuntelija.java">fi/jexniemi/gui/NappaimistonKuuntelija.java</a>
                 </td>
                 <td>
                   0
@@ -55,7 +55,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  6
                 </td>
               </tr>
                           <tr>
@@ -69,7 +69,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  5
                 </td>
               </tr>
                           <tr>
@@ -83,7 +83,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.Timer.java">fi/jexniemi/gui/Timer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
                 </td>
               </tr>
                           <tr>
@@ -97,7 +111,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
+                  28
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.TimeListener.java">fi/jexniemi/gui/TimeListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
                 </td>
               </tr>
                           <tr>
@@ -111,7 +139,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  18
+                  20
                 </td>
               </tr>
                           <tr>
@@ -125,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  11
                 </td>
               </tr>
                           <tr>
@@ -139,7 +167,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  16
                 </td>
               </tr>
                       </tbody>

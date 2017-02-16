@@ -1,4 +1,4 @@
-**Aihe:** Dodge -peli, jossa ohjataan jonkinlaista alusta, joka pystyy liikkumaan vaakasuorassa ja sillä väistellään jonkinlaisia ylhäältä vastaan tulevia vihollisia.
+**Aihe:** Dodge -peli, jossa ohjataan jonkinlaista alusta/olentoa, joka pystyy liikkumaan vaakasuorassa ja sillä väistellään jonkinlaisia ylhäältä vastaan tulevia vihollisia.
  Pelin vaikeusaste tulee todennäköisesti nousemaan kuluneen ajan myötä. Peli tulee olemaan aluksi yhdelle pelaajalle. 
 
 **Pelaajan toiminnot:**

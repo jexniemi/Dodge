@@ -6,8 +6,10 @@
 package fi.jexniemi.gui;
 
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
+import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.ArrayList;
 import javax.swing.JPanel;
 
 /**
@@ -17,16 +19,27 @@ import javax.swing.JPanel;
  */
 public class Piirtoalusta extends JPanel {
 
-    private Pelaaja hahmo;
+    private Pelaaja pelaaja;
+    private ArrayList<Vihollinen> viholliset;
     
-    public Piirtoalusta(Pelaaja hahmo) {
-        super.setBackground(Color.WHITE);
-        this.hahmo = hahmo;
+    /**
+     *
+     * @param pelaaja
+     * @param viholliset
+     */
+    public Piirtoalusta(Pelaaja pelaaja, ArrayList<Vihollinen> viholliset) {
+        super.setBackground(Color.BLACK);
+        this.pelaaja = pelaaja;
+        this.viholliset = viholliset;
     }
 
     @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
-        hahmo.piirra(graphics);
+        pelaaja.piirra(graphics);
+        
+        for (Vihollinen vihollinen : viholliset) {
+            vihollinen.piirra(graphics);
+        }
     }
 }

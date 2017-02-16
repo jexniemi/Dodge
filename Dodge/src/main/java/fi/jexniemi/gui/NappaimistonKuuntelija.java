@@ -17,11 +17,20 @@ import java.awt.Component;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ *
+ * @author jexniemi
+ */
 public class NappaimistonKuuntelija implements KeyListener {
 
     private Pelaaja pelaaja;
     private Component component;
 
+    /**
+     *
+     * @param setHahmo
+     * @param setComponent
+     */
     public NappaimistonKuuntelija(final Pelaaja setHahmo, final Component setComponent) {
         this.pelaaja = setHahmo;
         this.component = setComponent;

@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package fi.jexniemi.logiikka.hahmot;
+import java.awt.Color;
 import java.awt.Graphics;
+import java.util.Set;
 
 /**
  * Tästä luokasta luodaan pelikentällä liikkuva hahmo, joka on
@@ -14,6 +16,13 @@ import java.awt.Graphics;
  */
 public class Pelaaja extends Hahmo {
 
+    /**
+     *
+     * @param x
+     * @param y
+     * @param pelinLeveys
+     * @param pelinKorkeus
+     */
     public Pelaaja(final double x, final double y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
@@ -26,6 +35,8 @@ public class Pelaaja extends Hahmo {
     public final void piirra(final Graphics graphics) {
         int width = 15;
         int height = 15;
+        graphics.setColor(Color.white);
+        
         graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 }
