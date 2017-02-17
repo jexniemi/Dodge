@@ -7,35 +7,31 @@ package fi.jexniemi.gui;
 
 import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Component;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import static javax.swing.text.StyleConstants.setComponent;
+import java.util.TimerTask;
 
 /**
  *
  * @author jexniemi
  */
-public class TimeListener implements ActionListener {
+public class MyTimerTask extends TimerTask {
+
     private ArrayList<Vihollinen> viholliset;
     private Component component;
-    
-    /**
-     *
-     * @param viholliset
-     * @param setComponent
-     */
-    public TimeListener(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
+
+    public MyTimerTask(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
         this.viholliset = viholliset;
         this.component = setComponent;
     }
-    
-    @Override
-    public void actionPerformed(ActionEvent e) {
+
+    public void run() {
+        System.out.println("Timer task executed.");
+
         this.viholliset.add(new Vihollinen(0, -10, 500, 500));
         for (Vihollinen vihollinen : this.viholliset) {
             vihollinen.siirry(0, 10);
         }
         
-            }
+        component.repaint();
+    }
 }

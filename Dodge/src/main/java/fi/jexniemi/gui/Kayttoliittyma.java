@@ -16,13 +16,15 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import javax.swing.JFrame;
+import java.util.Timer;
 import javax.swing.WindowConstants;
+import java.util.TimerTask;
 
 /**
  *
  * @author jexniemi
  */
-public class Kayttoliittyma implements Runnable {
+public class Kayttoliittyma extends TimerTask implements Runnable {
 
     private JFrame frame;
     private Pelaaja pelaaja;
@@ -53,13 +55,20 @@ public class Kayttoliittyma implements Runnable {
 
         frame.pack();
         frame.setVisible(true);
+
     }
 
     private void luoKomponentit(Container container) {
         Piirtoalusta piirtoalusta = new Piirtoalusta(this.pelaaja, this.viholliset);
         container.add(piirtoalusta);
         frame.addKeyListener(new NappaimistonKuuntelija(this.pelaaja, piirtoalusta));
-        this.timer = new Timer(piirtoalusta, this.viholliset);
+
+        MyTimerTask myTask = new MyTimerTask(this.viholliset, piirtoalusta);
+        Timer myTimer = new Timer();
+        /*
+     * Set an initial delay of 1 second, then repeat every half second.
+         */
+        myTimer.schedule(myTask, 1000, 500);
     }
 
     /**
