@@ -11,4 +11,4 @@ Päivä | Tunnit | Kuvaus
 13.02.2017 | 2h | Dokumentointia, sekvenssikaavioita, pientä koodailua
 15.02.2017 | 3h | Vihollisten kehittelyä ja ajastimen rakentelua
 16.02.2017 | 3h | Lisää ajastimen kanssa taistelua ja dokumentointia
-
+17.02.2017 | 2h | Ajastin saatu toimimaan vihollisten kanssa, koodikatselmointi
