@@ -9,13 +9,12 @@ import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Component;
 import java.util.ArrayList;
 import java.util.TimerTask;
- import java.awt.Toolkit;
 
 /**
  *
  * @author jexniemi
  */
-public class MyTimerTask extends TimerTask {
+public class EnemyGenerator extends TimerTask {
 
     private ArrayList<Vihollinen> viholliset;
     private Component component;
@@ -25,7 +24,7 @@ public class MyTimerTask extends TimerTask {
      * @param viholliset
      * @param setComponent
      */
-    public MyTimerTask(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
+    public EnemyGenerator(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
         this.viholliset = viholliset;
         this.component = setComponent;
     }
@@ -33,9 +32,7 @@ public class MyTimerTask extends TimerTask {
     public void run() {
         System.out.println("Timer task executed.");
 
-        for (Vihollinen vihollinen : this.viholliset) {
-            vihollinen.siirry(0, 0.15);
-        }
+        this.viholliset.add(new Vihollinen(0, -10, 500, 500));
         
         component.repaint();
     }

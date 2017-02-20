@@ -64,11 +64,13 @@ public class Kayttoliittyma extends TimerTask implements Runnable {
         frame.addKeyListener(new NappaimistonKuuntelija(this.pelaaja, piirtoalusta));
 
         MyTimerTask myTask = new MyTimerTask(this.viholliset, piirtoalusta);
+        EnemyGenerator enemyGenerator = new EnemyGenerator(this.viholliset, piirtoalusta);
         Timer myTimer = new Timer();
         /*
      * Set an initial delay of 1 second, then repeat every half second.
          */
-        myTimer.schedule(myTask, 1000, 500);
+        myTimer.schedule(myTask, 1000, 5);
+        myTimer.schedule(enemyGenerator, 1000, 500);
     }
 
     /**
