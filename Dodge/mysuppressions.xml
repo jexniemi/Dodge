@@ -5,7 +5,8 @@
     "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
 
 <suppressions>
-    <suppress files="fi.jexniemi.gui.Kayttoliittyma" checks="[a-zA-Z0-9]*"/>
-    <suppress files="fi.jexniemi.gui.Piirtoalusta" checks="[a-zA-Z0-9]*"/>
-    <suppress files="fi.jexniemi.gui.Main" checks="[a-zA-Z0-9]*"/>
+    <suppress files="Kayttoliittyma.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="Main.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="NappaimistonKuuntelija.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="Piirtoalusta.java" checks="[a-zA-Z0-9]*"/>
 </suppressions>
