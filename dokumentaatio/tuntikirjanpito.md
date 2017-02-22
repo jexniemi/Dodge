@@ -12,3 +12,5 @@ Päivä | Tunnit | Kuvaus
 15.02.2017 | 3h | Vihollisten kehittelyä ja ajastimen rakentelua
 16.02.2017 | 3h | Lisää ajastimen kanssa taistelua ja dokumentointia
 17.02.2017 | 2h | Ajastin saatu toimimaan vihollisten kanssa, koodikatselmointi
+20.02.2017 | 2h | Vihollisten liikkuvuuden parantelua
+22.02.2017 | 6h | Deadline 6 tehtäviä, peli saatu pysähtymään nyt pelaajan törmätessä viholliseen

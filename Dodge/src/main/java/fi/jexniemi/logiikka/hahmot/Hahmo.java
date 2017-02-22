@@ -5,9 +5,11 @@
  */
 package fi.jexniemi.logiikka.hahmot;
 
+import java.awt.Rectangle;
+
 /**
  * Tätä luokkaa käytetään pohjana kaikille pelikentällä liikkuville olioille
- * 
+ *
  * @author jexniemi
  */
 public abstract class Hahmo {
@@ -106,7 +108,7 @@ public abstract class Hahmo {
     public final void setVauhti(final double amount) {
         this.vauhti = amount;
     }
-    
+
     /**
      * Lisää pelihahmon vauhtia.
      *
@@ -118,9 +120,9 @@ public abstract class Hahmo {
 
     /**
      * Metodi muuttaa Hahmo -luokan ilmentymän x ja y arvoja.
-     * 
-     * 
-     * 
+     *
+     *
+     *
      * @param xmuutos Muuttujaan x lisättävä arvo
      * @param ymuutos Muuttujaan y lisättävä arvo
      */
@@ -142,6 +144,10 @@ public abstract class Hahmo {
         lisaaVauhtia(1);
 
         this.y += ymuutos;
+    }
+
+    public Rectangle getBounds() {
+        return new Rectangle((int) getX(), (int) getY(), 15, 15);
     }
 
 }

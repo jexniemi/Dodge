@@ -10,6 +10,8 @@ package fi.jexniemi.gui;
  *
  * @author jexniemi
  */
+import fi.jexniemi.gui.TimerTasks.GameTask;
+import fi.jexniemi.gui.TimerTasks.EnemyGeneratorTask;
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Container;
@@ -63,14 +65,14 @@ public class Kayttoliittyma extends TimerTask implements Runnable {
         container.add(piirtoalusta);
         frame.addKeyListener(new NappaimistonKuuntelija(this.pelaaja, piirtoalusta));
 
-        MyTimerTask myTask = new MyTimerTask(this.viholliset, piirtoalusta);
-        EnemyGenerator enemyGenerator = new EnemyGenerator(this.viholliset, piirtoalusta);
         Timer myTimer = new Timer();
         /*
      * Set an initial delay of 1 second, then repeat every half second.
          */
-        myTimer.schedule(myTask, 1000, 5);
-        myTimer.schedule(enemyGenerator, 1000, 500);
+        GameTask myTask = new GameTask(myTimer, this.viholliset, this.pelaaja, piirtoalusta);
+        EnemyGeneratorTask enemyGenerator = new EnemyGeneratorTask(this.viholliset, piirtoalusta);
+        myTimer.schedule(myTask, 1000, 1);
+        myTimer.schedule(enemyGenerator, 1000, 200);
     }
 
     /**

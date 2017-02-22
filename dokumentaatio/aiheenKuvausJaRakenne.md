@@ -1,9 +1,18 @@
-**Aihe:** Dodge -peli, jossa ohjataan jonkinlaista alusta/olentoa, joka pystyy liikkumaan vaakasuorassa ja sillä väistellään jonkinlaisia ylhäältä vastaan tulevia vihollisia.
- Pelin vaikeusaste tulee todennäköisesti nousemaan kuluneen ajan myötä. Peli tulee olemaan aluksi yhdelle pelaajalle. 
+**Aihe:** Dodge -peli, jossa ohjataan jonkinlaista alusta/olentoa, joka pystyy liikkumaan vaakasuorassa ja sillä väistellään jonkinlaisia ylhäältä vastaan tulevia vihollisia. Peli tulee olemaan aluksi yhdelle pelaajalle. 
 
 **Pelaajan toiminnot:**
 
 * Pelihahmon liikuttelu vaakasuorassa nuolinäppäimien avulla.
+
+**Rakennekuvaus:**
+
+Kaikki pelikentällä liikkuvat oliot perivät Hahmo -luokan. 
+Pelaaja -luokkaa käytetään pelaajan liikutteleman hahmon luomiseen ja 
+Vihollinen -luokkaa käytetään vihollisolioiden luomiseen. NappaimistonKuuntelija
+kuuntelee vasenta ja oikeaa nuolinäppäintä ja muuttaa pelaajaolion 
+x-koordinaatteja näiden mukaan. Kayttoliittyma luo timer -olion käyttöliittymän
+luonnin yhteydessä ja tämä  pyörittää pelin tapahtumia GameTask luokan avulla
+ja generoi vihollisia EnemyGeneratorTask luokkaa käyttäen.
 
 **Luokkakaavio:**
 

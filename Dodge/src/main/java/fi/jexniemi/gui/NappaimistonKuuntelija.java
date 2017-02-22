@@ -46,7 +46,7 @@ public class NappaimistonKuuntelija implements KeyListener {
         } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
             pelaaja.siirry(right, 0);
         }
-        component.repaint();
+        
     }
 
     @Override

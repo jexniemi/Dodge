@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.jexniemi.gui;
+package fi.jexniemi.gui.TimerTasks;
 
 import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Component;
 import java.util.ArrayList;
 import java.util.TimerTask;
- import java.awt.Toolkit;
 
 /**
  *
  * @author jexniemi
  */
-public class MyTimerTask extends TimerTask {
+public class EnemyGeneratorTask extends TimerTask {
 
     private ArrayList<Vihollinen> viholliset;
     private Component component;
@@ -25,18 +24,12 @@ public class MyTimerTask extends TimerTask {
      * @param viholliset
      * @param setComponent
      */
-    public MyTimerTask(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
+    public EnemyGeneratorTask(final ArrayList<Vihollinen> viholliset, final Component setComponent) {
         this.viholliset = viholliset;
         this.component = setComponent;
     }
 
     public void run() {
-        System.out.println("Timer task executed.");
-
-        for (Vihollinen vihollinen : this.viholliset) {
-            vihollinen.siirry(0, 0.15);
-        }
-        
-        component.repaint();
+        this.viholliset.add(new Vihollinen(0, -10, 500, 500));
     }
 }
