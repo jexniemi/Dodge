@@ -30,7 +30,7 @@ public class Vihollinen extends Hahmo {
     public Vihollinen(final int x, final int y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
         Random r = new Random();
-        this.x = r.nextInt(500);       
+        this.x = r.nextInt(500);
     }
 
     /**
@@ -43,7 +43,7 @@ public class Vihollinen extends Hahmo {
         graphics.setColor(Color.RED);
         int[] xPoints = {(int) getX() - 7, (int) getX(), (int) getX() + 7};
         int[] yPoints = {(int) getY(), (int) getY() + 15, (int) getY()};
-        
+
         graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 
