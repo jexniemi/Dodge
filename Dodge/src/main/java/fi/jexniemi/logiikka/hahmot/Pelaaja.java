@@ -2,8 +2,6 @@ package fi.jexniemi.logiikka.hahmot;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.util.Set;
-import java.awt.Rectangle;
 
 /**
  * .
@@ -36,9 +34,6 @@ public class Pelaaja extends Hahmo {
         int height = 15;
         graphics.setColor(Color.WHITE);
 
-//        int[] xPoints = {(int) getX() - 7, (int) getX(), (int) getX() + 7};
-//        int[] yPoints = {(int) getY(), (int) getY() -15, (int) getY()};
-//        graphics.fillPolygon(xPoints, yPoints, 3);
         graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 
