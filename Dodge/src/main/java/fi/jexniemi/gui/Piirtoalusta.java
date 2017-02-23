@@ -14,14 +14,14 @@ import javax.swing.JPanel;
 
 /**
  * Piirtoalusta
- * 
+ *
  * @author jexniemi
  */
 public class Piirtoalusta extends JPanel {
 
     private Pelaaja pelaaja;
     private ArrayList<Vihollinen> viholliset;
-    
+
     /**
      *
      * @param pelaaja
@@ -37,7 +37,7 @@ public class Piirtoalusta extends JPanel {
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
         pelaaja.piirra(graphics);
-        
+
         for (Vihollinen vihollinen : viholliset) {
             vihollinen.piirra(graphics);
         }

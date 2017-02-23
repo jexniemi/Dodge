@@ -1,5 +1,3 @@
-// CHECKSTYLE:OFF
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,8 +10,8 @@ package fi.jexniemi.gui;
  *
  * @author jexniemi
  */
-import fi.jexniemi.gui.TimerTasks.GameTask;
-import fi.jexniemi.gui.TimerTasks.EnemyGeneratorTask;
+import fi.jexniemi.gui.timertasks.GameTask;
+import fi.jexniemi.gui.timertasks.EnemyGeneratorTask;
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Container;
@@ -72,7 +70,7 @@ public class Kayttoliittyma extends TimerTask implements Runnable {
      * Set an initial delay of 1 second, then repeat every half second.
          */
         GameTask myTask = new GameTask(myTimer, this.viholliset, this.pelaaja, piirtoalusta);
-        EnemyGeneratorTask enemyGenerator = new EnemyGeneratorTask(this.viholliset, piirtoalusta);
+        EnemyGeneratorTask enemyGenerator = new EnemyGeneratorTask(this.viholliset);
         myTimer.schedule(myTask, 1000, 1);
         myTimer.schedule(enemyGenerator, 1000, 200);
     }

@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2017</copyright>
     <item>
       <title>File: 9,
-             Errors: 136,
+             Errors: 0,
              Warnings: 0,
              Infos: 0
       </title>
@@ -55,7 +55,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  0
                 </td>
               </tr>
                           <tr>
@@ -69,7 +69,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.timertasks.EnemyGeneratorTask.java">fi/jexniemi/gui/timertasks/EnemyGeneratorTask.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
                 </td>
               </tr>
                           <tr>
@@ -83,21 +97,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.Timer.java">fi/jexniemi/gui/Timer.java</a>
-                </td>
-                <td>
                   0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  21
                 </td>
               </tr>
                           <tr>
@@ -111,12 +111,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  28
+                  0
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.TimeListener.java">fi/jexniemi/gui/TimeListener.java</a>
+                  <a href="${project.url}/checkstyle.html#fi.jexniemi.gui.timertasks.GameTask.java">fi/jexniemi/gui/timertasks/GameTask.java</a>
                 </td>
                 <td>
                   0
@@ -125,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  0
                 </td>
               </tr>
                           <tr>
@@ -139,7 +139,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
+                  0
                 </td>
               </tr>
                           <tr>
@@ -153,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
+                  0
                 </td>
               </tr>
                           <tr>
@@ -167,7 +167,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  16
+                  0
                 </td>
               </tr>
                       </tbody>

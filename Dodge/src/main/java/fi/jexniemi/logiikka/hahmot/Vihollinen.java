@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package fi.jexniemi.logiikka.hahmot;
 
 import java.awt.Color;
@@ -12,7 +7,7 @@ import java.util.Random;
 
 /**
  * Viholliset ovat pelikentällä ylhäältä alas putoavia olioita, joita pelaajan
- * tulee väistellä
+ * tulee väistellä.
  *
  * @author jexniemi
  */
@@ -22,10 +17,10 @@ public class Vihollinen extends Hahmo {
      * Konstruktori luo vihollis -olion ja sijoittaa sen pelikentä ylälaidalle.
      * X:n arvo on sattumanvarainen.
      *
-     * @param x
-     * @param y
-     * @param pelinLeveys
-     * @param pelinKorkeus
+     * @param x set X
+     * @param y set Y
+     * @param pelinLeveys set pelinLeveys
+     * @param pelinKorkeus set pelinKorkeus
      */
     public Vihollinen(final int x, final int y, final int pelinLeveys, final int pelinKorkeus) {
         super(x, y, pelinLeveys, pelinKorkeus);
@@ -34,8 +29,9 @@ public class Vihollinen extends Hahmo {
     }
 
     /**
+     * Piirtää vihollisen.
      *
-     * @param graphics
+     * @param graphics piirtämistä varten
      */
     public final void piirra(final Graphics graphics) {
         int width = 15;

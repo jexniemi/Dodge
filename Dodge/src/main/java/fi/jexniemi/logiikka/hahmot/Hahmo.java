@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package fi.jexniemi.logiikka.hahmot;
 
 import java.awt.Rectangle;
 
 /**
- * Tätä luokkaa käytetään pohjana kaikille pelikentällä liikkuville olioille
+ * .
+ * Tätä luokkaa käytetään pohjana kaikille pelikentällä liikkuville olioille.
  *
  * @author jexniemi
  */
@@ -21,6 +17,7 @@ public abstract class Hahmo {
     private double vauhti;
 
     /**
+     * Konstruktori.
      *
      * @param setX asettaa x arvon
      * @param setY asettaa y arvon
@@ -35,76 +32,44 @@ public abstract class Hahmo {
         this.vauhti = 0;
     }
 
-    /**
-     *
-     * @return
-     */
     public final double getX() {
         return x;
     }
 
-    /**
-     *
-     * @return
-     */
     public final double getY() {
         return y;
     }
 
-    /**
-     *
-     * @param setX
-     */
     public final void setX(final double setX) {
         this.x = setX;
     }
 
-    /**
-     *
-     * @param setY
-     */
     public final void setY(final double setY) {
         this.y = setY;
     }
 
-    /*
-    * Metodi muuttaa muuttuujaa x arvoa halutun verran.
-    *
-    * @param amount Muuttujaan x lisättävä arvo
-    *
+    /**
+     * Metodi muuttaa muuttuujaa x arvoa halutun verran.
+     *
+     * @param amount Muuttujaan x lisättävä arvo
+     *
      */
     public final void moveX(final double amount) {
         this.x += amount;
     }
 
-    /**
-     *
-     * @return
-     */
     public final int getPelinLeveys() {
         return this.pelinLeveys;
     }
 
-    /**
-     *
-     * @return
-     */
     public final int getPelinKorkeus() {
         return this.pelinKorkeus;
     }
 
-    /**
-     *
-     * @return
-     */
     public final double getVauhti() {
         return this.vauhti;
     }
 
-    /**
-     *
-     * @param amount
-     */
     public final void setVauhti(final double amount) {
         this.vauhti = amount;
     }
@@ -120,8 +85,6 @@ public abstract class Hahmo {
 
     /**
      * Metodi muuttaa Hahmo -luokan ilmentymän x ja y arvoja.
-     *
-     *
      *
      * @param xmuutos Muuttujaan x lisättävä arvo
      * @param ymuutos Muuttujaan y lisättävä arvo
