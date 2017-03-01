@@ -13,4 +13,4 @@ Javalab 2017 course project
 
 [Checkstyle](https://htmlpreview.github.io/?https://github.com/jexniemi/Dodge/blob/master/dokumentaatio/site/checkstyle.html)
 
-[Javadoc] 
+[Javadoc](https://htmlpreview.github.io/?https://github.com/jexniemi/Dodge/blob/master/dokumentaatio/apidocs/index-all.html) 
