@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 /**
- * Piirtoalusta
+ * Piirtoalusta.
  *
  * @author jexniemi
  */

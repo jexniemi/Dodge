@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * .
  * Tästä luokasta luodaan pelikentällä liikkuva hahmo, joka on pelaajan
  * ohjattavissa.
  *

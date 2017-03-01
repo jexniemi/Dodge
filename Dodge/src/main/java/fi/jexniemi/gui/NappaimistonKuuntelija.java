@@ -8,7 +8,7 @@ package fi.jexniemi.gui;
 
 
 /**
- * Kuuntelee näppäimistöä
+ * Kuuntelee näppäimistöä.
  *
  * @author jexniemi
  */

@@ -3,7 +3,6 @@ package fi.jexniemi.logiikka.hahmot;
 import java.awt.Rectangle;
 
 /**
- * .
  * Tätä luokkaa käytetään pohjana kaikille pelikentällä liikkuville olioille.
  *
  * @author jexniemi
