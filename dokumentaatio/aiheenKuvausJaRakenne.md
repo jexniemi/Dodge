@@ -22,7 +22,7 @@ ja generoi vihollisia EnemyGeneratorTask luokkaa käyttäen.
 
 ![Alt text] (DodgeSekvenssikaavio1.jpg "Sekvenssikaavio 1")
 
-**Sekvenssikaavio 2 (Pelaajan liikkuminen oikealle):**
+**Sekvenssikaavio 2 (Yksittäisen vihollisen liikkuminen):**
 
 ![Alt text] (DodgeSekvenssikaavio2.jpg "Sekvenssikaavio 2")
 
