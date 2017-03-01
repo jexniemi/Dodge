@@ -14,3 +14,5 @@ Päivä | Tunnit | Kuvaus
 17.02.2017 | 2h | Ajastin saatu toimimaan vihollisten kanssa, koodikatselmointi
 20.02.2017 | 2h | Vihollisten liikkuvuuden parantelua
 22.02.2017 | 6h | Deadline 6 tehtäviä, peli saatu pysähtymään nyt pelaajan törmätessä viholliseen
+23.02.2017 | 1h | Viimeistelyä demotilaisuutta varten
+01.03.2017 | 4h | Korjailua loppupalautusta varten
