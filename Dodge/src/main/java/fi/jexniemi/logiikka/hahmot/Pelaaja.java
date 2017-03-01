@@ -23,17 +23,4 @@ public class Pelaaja extends Hahmo {
         super(x, y, pelinLeveys, pelinKorkeus);
     }
 
-    /**
-     * Piirtää pelihahmon haluttuun sijaintiin kentällä.
-     *
-     * @param graphics piirtämistä varten
-     */
-    public final void piirra(final Graphics graphics) {
-        int width = 15;
-        int height = 15;
-        graphics.setColor(Color.WHITE);
-
-        graphics.fillOval((int) getX(), (int) getY(), width, height);
-    }
-
 }

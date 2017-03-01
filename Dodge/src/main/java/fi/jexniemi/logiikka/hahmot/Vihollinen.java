@@ -13,7 +13,7 @@ import java.util.Random;
 public class Vihollinen extends Hahmo {
 
     /**
-     * Konstruktori luo vihollis -olion ja sijoittaa sen pelikentä ylälaidalle.
+     * Konstruktori luo vihollis -olion ja sijoittaa sen pelikentän ylälaidalle.
      * X:n arvo on sattumanvarainen.
      *
      * @param x set X
@@ -25,19 +25,6 @@ public class Vihollinen extends Hahmo {
         super(x, y, pelinLeveys, pelinKorkeus);
         Random r = new Random();
         this.x = r.nextInt(500);
-    }
-
-    /**
-     * Piirtää vihollisen.
-     *
-     * @param graphics piirtämistä varten
-     */
-    public final void piirra(final Graphics graphics) {
-        int width = 15;
-        int height = 15;
-        graphics.setColor(Color.RED);
-
-        graphics.fillOval((int) getX(), (int) getY(), width, height);
     }
 
 }

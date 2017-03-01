@@ -5,6 +5,7 @@
  */
 package fi.jexniemi.gui;
 
+import fi.jexniemi.logiikka.hahmot.Hahmo;
 import fi.jexniemi.logiikka.hahmot.Pelaaja;
 import fi.jexniemi.logiikka.hahmot.Vihollinen;
 import java.awt.Color;
@@ -36,10 +37,24 @@ public class Piirtoalusta extends JPanel {
     @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
-        pelaaja.piirra(graphics);
+        piirraHahmo(graphics, this.pelaaja);
 
         for (Vihollinen vihollinen : viholliset) {
-            vihollinen.piirra(graphics);
+            piirraHahmo(graphics, vihollinen);
         }
     }
+
+    protected void piirraHahmo(Graphics graphics, Hahmo hahmo) {
+        int width = 15;
+        int height = 15;
+
+        if (hahmo instanceof Pelaaja) {
+            graphics.setColor(Color.WHITE);
+        } else if (hahmo instanceof Vihollinen) {
+            graphics.setColor(Color.RED);
+        }
+
+        graphics.fillOval((int) hahmo.getX(), (int) hahmo.getY(), width, height);
+    }
+
 }
